@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Abstract="True" Name="OrganicProductBase" ParentName="ResourceBase">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>6</DeteriorationRate>
+			<Mass>0.03</Mass>
+    </statBases>
+    <tickerType>Rare</tickerType>
+  </ThingDef>
+
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>MeatyKibble</defName>
+    <label>meaty kibble</label>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <description>Kibble animal feed made from mixed meat and plant sources, specifically tailored for carnivores. Humans can eat it, but they really, really don't like it.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Kibble</texPath>
+	  <color>(165,75,50)</color>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>1.3</MarketValue>
+      <Mass>0.015</Mass>
+    </statBases>
+    <ingestible>
+      <foodType>Kibble, Meat</foodType>
+      <preferability>RawBad</preferability>
+			<tasteThought>AteKibble</tasteThought>
+			<optimalityOffset>-30</optimalityOffset>
+      <nutrition>0.05</nutrition>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
+   <ThingDef ParentName="OrganicProductBase">
+    <defName>VeggieKibble</defName>
+    <label>veggie kibble</label>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <description>Kibble animal feed made from mixed plant sources, specifically tailored for herbivores. Humans can eat it, but they really, really don't like it.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Kibble</texPath>
+	  <color>(95,130,55)</color>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>1.3</MarketValue>
+      <Mass>0.015</Mass>
+    </statBases>
+    <ingestible>
+      <foodType>Kibble, VegetableOrFruit</foodType>
+      <preferability>RawBad</preferability>
+			<tasteThought>AteKibble</tasteThought>
+			<optimalityOffset>-30</optimalityOffset>
+      <nutrition>0.05</nutrition>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+</ThingDefs>
