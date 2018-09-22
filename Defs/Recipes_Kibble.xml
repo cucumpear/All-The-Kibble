@@ -1,11 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<RecipeDefs>
+<Defs>
 
   <RecipeDef>
     <defName>MakeMeatyKibble</defName>
     <label>make meaty kibble</label>
     <description>Make animal kibble for carnivores by combining raw meat and plants.</description>
     <jobString>Making meaty kibble.</jobString>
+	<recipeUsers>
+		<li>TableButcher</li>
+	</recipeUsers>
     <workAmount>300</workAmount>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
@@ -49,12 +52,12 @@
       <categories>
         <li>Foods</li>
       </categories>
-      <exceptedCategories>
+      <disallowedCategories>
         <li>EggsFertilized</li>
-      </exceptedCategories>
-      <exceptedThingDefs>
+      </disallowedCategories>
+      <disallowedThingDefs>
         <li>InsectJelly</li>
-      </exceptedThingDefs>
+      </disallowedThingDefs>
     </defaultIngredientFilter>
     <workSkill>Cooking</workSkill>
   </RecipeDef>
@@ -64,6 +67,9 @@
     <label>make veggie kibble</label>
     <description>Make animal kibble for herbivores by combining raw meat and plants.</description>
     <jobString>Making veggie kibble.</jobString>
+	<recipeUsers>
+		<li>TableButcher</li>
+	</recipeUsers>
     <workAmount>300</workAmount>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
@@ -103,14 +109,14 @@
       <categories>
         <li>Foods</li>
       </categories>
-      <exceptedCategories>
+      <disallowedCategories>
         <li>EggsFertilized</li>
-      </exceptedCategories>
-      <exceptedThingDefs>
+      </disallowedCategories>
+      <disallowedThingDefs>
         <li>InsectJelly</li>
-      </exceptedThingDefs>
+      </disallowedThingDefs>
     </defaultIngredientFilter>
     <workSkill>Cooking</workSkill>
   </RecipeDef>
 	
-</RecipeDefs>
+</Defs>
